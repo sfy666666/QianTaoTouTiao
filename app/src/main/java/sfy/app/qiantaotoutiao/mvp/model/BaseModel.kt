@@ -5,5 +5,5 @@ package sfy.app.qiantaotoutiao.mvp.model
  * time   : 2021/1/19
  * desc   :
  */
-data class BaseModel<T>(val code:Int,val message:String,val data :T) {
+data class BaseModel<T>(val reason:String,val result :T) {
 }

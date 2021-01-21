@@ -20,13 +20,14 @@ class MainActivity : BaseActivity<MainView,MainPresenter>(),MainView {
     override fun init() {
         btn_test.setOnClickListener {
             getPresenter()!!.getTest("test")
+            getPresenter()!!.getTest()
         }
     }
 
     override fun createPresenter() =MainPresenter();
 
     override fun <T> setData(data: T) {
-        Log.e("test","===============>$data")
+        Log.i("test","===============>$data")
     }
 
     override fun setError(err: String) {

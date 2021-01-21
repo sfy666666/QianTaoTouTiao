@@ -6,7 +6,7 @@ package sfy.app.qiantaotoutiao.base
  * desc   : 常量类
  */
 object Constants {
-    const val BASE_URL="http://www.apiopen.top/"
-    const val BASE_URL_TEST="http://www.apiopen.top/"
+    const val BASE_URL="http://v.juhe.cn/toutiao/"
+    const val BASE_URL_TEST="http://v.juhe.cn/toutiao/"
 
 }
