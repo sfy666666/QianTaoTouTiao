@@ -6,14 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.act.MainActivity">
 
-    <Button
-        android:id="@+id/btn_test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <sfy.app.qiantaotoutiao.view.ScrollNotViewPager
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        />
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:id="@+id/vp_home"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        />-->
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/ctl_home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@android:color/white"
+        app:tl_textsize="10sp"
+        app:tl_textUnselectColor="@color/c_505050"
+        app:tl_textSelectColor="@color/c_E6645F"
+        app:tl_indicator_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

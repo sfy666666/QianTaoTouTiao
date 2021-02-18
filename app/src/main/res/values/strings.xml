@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">QianTaoTouTiao</string>
+    <string name="home">首页</string>
+    <string name="mini_video">短视频</string>
+    <string name="video">视频</string>
+    <string name="my">我的</string>
 </resources>
