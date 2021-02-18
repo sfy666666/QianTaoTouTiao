@@ -9,6 +9,7 @@ import com.flyco.tablayout.listener.OnTabSelectListener
 import kotlinx.android.synthetic.main.activity_main.*
 import sfy.app.qiantaotoutiao.R
 import sfy.app.qiantaotoutiao.base.BaseActivity
+import sfy.app.qiantaotoutiao.base.Constants.HOME_BAR
 import sfy.app.qiantaotoutiao.ui.main.adapter.HomeAdapter
 import sfy.app.qiantaotoutiao.ui.main.frg.HomeFragment
 import sfy.app.qiantaotoutiao.ui.main.frg.MiniVideoFragment
@@ -17,6 +18,7 @@ import sfy.app.qiantaotoutiao.ui.main.frg.VideoFragment
 import sfy.app.qiantaotoutiao.ui.main.model.TitleModel
 import sfy.app.qiantaotoutiao.ui.main.presenter.MainPresenter
 import sfy.app.qiantaotoutiao.ui.main.view.MainView
+import sfy.app.qiantaotoutiao.utils.StatusBarUtils
 
 class MainActivity : BaseActivity<MainView, MainPresenter>(), MainView {
 
@@ -26,6 +28,8 @@ class MainActivity : BaseActivity<MainView, MainPresenter>(), MainView {
     override fun getLayoutId(): Int = R.layout.activity_main
 
     override fun initData() {
+        //设置状态栏颜色
+        StatusBarUtils.setStatusBar(this,HOME_BAR,R.color.c_E6645F)
         val titles: Array<String> = resources.getStringArray(R.array.title)
         val selectIds: TypedArray = resources.obtainTypedArray(R.array.selected)
         val unSelectIds: TypedArray = resources.obtainTypedArray(R.array.unselected)

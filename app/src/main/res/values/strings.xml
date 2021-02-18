@@ -4,4 +4,9 @@
     <string name="mini_video">短视频</string>
     <string name="video">视频</string>
     <string name="my">我的</string>
+    <string name="account_registration">账号注册</string>
+    <string name="agreement">我已阅读并同意 "\"用户协议"\" 和 "\"隐私政策"\"</string>
+    <string name="next">下一步</string>
+    <string name="_86">+86</string>
+    <string name="telephone_no">手机号码</string>
 </resources>
