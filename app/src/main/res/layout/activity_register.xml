@@ -60,16 +60,17 @@
             android:textColor="@color/c_222"
             app:drawableRightCompat="@mipmap/icon_pull" />
 
-        <EditText
+        <sfy.app.qiantaotoutiao.view.MobileEditText
             android:id="@+id/input"
-            android:maxLength="11"
-            android:background="@null"
-            android:layout_width="match_parent"
+            android:layout_width="288dp"
             android:layout_height="40dp"
-            android:paddingStart="23dp"
-            android:hint="@string/telephone_no"
             android:autofillHints="true"
+            android:background="@null"
+            android:hint="@string/telephone_no"
             android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingStart="23dp"
             android:paddingLeft="23dp" />
     </LinearLayout>
 
